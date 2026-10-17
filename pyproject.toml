@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-fetch-ssrf-auditor"
+version = "1.0.0"
+description = "Audit the MCP fetch tool as a cloud-metadata exfil path (stdlib only)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+mcp-fetch-ssrf-auditor = "mcp_fetch_ssrf_auditor:main"
+
+[tool.setuptools]
+py-modules = ["mcp_fetch_ssrf_auditor"]
